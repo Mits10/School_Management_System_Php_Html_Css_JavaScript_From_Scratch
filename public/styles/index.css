@@ -1,0 +1,153 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #E0EEE0;
+  font-size: 18px;
+  font-family: serif;
+
+}
+
+.navbar{
+  background-color: #C1CDC1;
+  width: auto;
+  height: 100px;
+  position: relative;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.navbar ul{
+  float: right;
+  margin-top: 30px;
+}
+
+.navbar ul li{
+  display: inline;
+  margin-right: 5px;
+}
+.navbar ul li a{
+  color: #4C7064;
+}
+.clearfix{
+  padding: 15px 15px 15px 15px;
+}
+.imageSliding{
+  float: left;
+  width: 65%;
+}
+.noticeBar{
+  float: right;
+  width: 35%;
+  padding: 20px;
+}
+.noticeBar h1{
+  text-align: center;
+  color: #4C7064;
+}
+.noticeBar ul li{
+  margin: 15px 15px 15px 15px;
+}
+.noticeBar ul li a{
+    color: #4C7064;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row{
+  padding: 15px 15px 15px 15px;
+
+}
+.row .column{
+  float: left;
+  width:25%;
+  background-color: #C1CDC1;
+  padding: 15px 15px 15px 15px;
+}
+.row .column a{
+    color: #4C7064;
+}
+.row h1{
+  color: #4C7064;
+  padding: 10px 10px 25px 10px;
+}
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.author{
+  padding: 35px 15px 35px 15px;
+}
+.authorImage{
+  float: right;
+  width: 25%;
+}
+.authorContent{
+  float: right;
+  width: 75%;
+  padding: 15px 15px 15px 15px;
+}
+.authorContent h1{
+  text-align: right;
+  padding: 10px 10px 25px 10px;
+  color: #4C7064;
+}
+.authorContent p{
+    color: #4C7064;
+}
+.author::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.footer{
+  padding: 65px 15px 65px 15px;
+  background-color: #C1CDC1;
+}
+.footer::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.footer .column{
+  float: left;
+  width: 20%;
+}
+.footer h1{
+  color: #4C7064;
+  font-size: 25px;
+}
+.footer a{
+    color: #4C7064;
+}
+/*Responsive Design Part*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+}
