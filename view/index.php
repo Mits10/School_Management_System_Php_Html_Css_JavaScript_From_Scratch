@@ -3,13 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:/Users/User/Desktop/layout/SchoolManagementSystem/public/styles/index.css">
+    <link rel="stylesheet" href="../public/styles/index.css">
+    <?php
+    // include database and object files
+    include_once '../config/database.php';
+    // get database connection
+    $database = new Database();
+    $db = $database->getConnection();
+    ?>
 
     <title>Home Page</title>
   </head>
   <body>
      <div class="navbar">
-       <img src="C:/Users/User/Desktop/layout/SchoolManagementSystem/public/images/logo.jpg" alt="">
+       <img src="../public/images/logo.jpg" alt="">
        <ul>
         <li><a href="">NSU</a></li>
         <li><a href="">Academic</a></li>
@@ -19,13 +26,13 @@
         <li><a href="">Library</a></li>
         <li><a href="">Archive</a></li>
         <li><a href="">Contact US</a></li>
-        <li><a href=""></a></li>
+        <li><a href="teacher/register.php">Register</a></li>
        </ul>
 
     </div>
     <div class="clearfix">
       <div class="imageSliding">
-        <img src="C:/Users/User/Desktop/layout/SchoolManagementSystem/public/images/school.jpg" alt="">
+        <img src="../public/images/school.jpg" alt="">
       </div>
       <div class="noticeBar">
         <h1>Notices</h1>
@@ -43,19 +50,19 @@
     <div class="row">
       <h1>News</h1>
       <div class="column">
-        <img src="C:/Users/User/Desktop/layout/SchoolManagementSystem/public/images/news1.jpg" alt=""><br>
+        <img src="../public/images/news1.jpg" alt=""><br>
         <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a><br>
       </div>
       <div class="column">
-        <img src="C:/Users/User/Desktop/layout/SchoolManagementSystem/public/images/news2.jpg" alt=""><br>
+        <img src="../public/images/news2.jpg" alt=""><br>
         <a href="#">Morbi mollis nisl posuere est fermentum tincidunt.</a><br>
       </div>
       <div class="column">
-        <img src="C:/Users/User/Desktop/layout/SchoolManagementSystem/public/images/news4.jpg" alt=""><br>
+        <img src="../public/images/news4.jpg" alt=""><br>
         <a href="#">Proin egestas orci at ipsum dapibus porta.</a><br>
       </div>
       <div class="column">
-        <img src="C:/Users/User/Desktop/layout/SchoolManagementSystem/public/images/news3.jpg" alt=""><br>
+        <img src="../public/images/news3.jpg" alt=""><br>
         <a href="#">Proin egestas orci at ipsum dapibus porta.</a><br>
       </div>
     </div>
@@ -63,7 +70,7 @@
     <div class="author">
 
           <div class="authorImage">
-            <img src="C:/Users/User/Desktop/layout/SchoolManagementSystem/public/images/author.jpg" alt="">
+            <img src="../public/images/author.jpg" alt="">
           </div>
           <div class="authorContent">
             <h1>Message From Vice Chancellor</h1>
